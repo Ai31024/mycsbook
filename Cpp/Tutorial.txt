@@ -1,0 +1,147 @@
+C++ tutorial:
+
+for reference : https://en.cppreference.com/w/
+-----------------------
+Variable Scope & Data Types
+
+Variables, scopes:
+
+A Variable is a container to hold data 
+primarily these are : 
+    1. int : integer, i.e., 0, 1, 2... 9 or 23, 334, 55332
+    2. float : Float, i.e., 0.1, 2.3, 22.7
+    3. char : Character, i.e., a to z or A to Z
+    4. double : Double float, i.e., 5.4432223 etc.
+    5. bool : Boolean, i.e., True (1) or False (0)
+
+eg: > int sum = 34 ; This means, the term called "sum" is an integer which holds value 34 in the memory.
+
+Based on scope, variable can be classified into two types: 1. Local Variables 2. Global Variables
+
+Scope of a variable is the region in code where the existence of variable is valid.
+Local Variable : Local variables are declared inside the braces of any function and can be accessed only from there.
+Global Variable : Global variables are declared outside any function and can be accessed from anywhere.
+Global and Local variable can have same name.
+
+calling a variable inside a function always prefers the local variable.
+-----------------------
+Data Types:
+
+Data Types define the type of data a variable can hold, for example an integer variable can hold integer data, a Character type variable can hold Character data etc.
+
+Data Types in Cpp are categorised in three group:
+1. Build-in. 
+2. User-Defined.
+3. Derived.
+
+Rules to declare variables in c++:
+    1. Variable names in c++ can range from 1 to 255 characters.
+    2. All variable names must begin with a letter of the alphabet or an underscore.
+    3. After the first initial letter, variable names can also contain letters and numbers.
+    4. Variable names are case sensitive.
+    5. No space or special characters are allowed.
+    6. You cannot use a C++ reserved keywords as a variable name.
+-----------------------
+Basic i/o in c++:
+
+<< is called Insertion operator.
+>> is called Extraction operator.
+
+cout is "console out"
+cin is "console in"
+
+-----------------------
+Header files & Operators:
+
+There are 2 type of header files.
+
+    1. System header files: It comes with the compiler
+    2. User defined header files : It is written by the programmer.
+
+during this course I created an empty header file called "myheader.h"
+
+Common operators in C++:
+
+    1. Arithmetic Operators : +, -, /, *, %, etc.
+    2. Assignment Operators : =
+    3. Comparision Operators : <, >, <=, >=, ==, !=, etc.
+    4. Logical Operators : &&, ||, !(bool), etc.
+    5. Increment and decrement operators : i++, i--, ++i, --i, i+=n, i-=n, etc.
+----------------------
+
+Reference variables & Typecasting:
+
+Reference variables means that one variable can be called using different names. To make a different name refer to a perticular variable, we should use (&) sign before it.
+i.e.,
+    int a = 10;
+    int &b = a;
+after doing this, when we call "b" using "cout<<b<<endl;" that will print out value of a.
+Because "b" became a different name for calling "a". Here, "b" refers to "a".
+
+TypeCasting means to convert one type of datatype into another type of datatype.
+----------------------
+
+Constants, Manipulators & Operator precedence:
+
+Constants are just read only variables. Once they are written then that cannot change. written as "const".
+
+Manipulators are text modifiers that modifies the output texts. e.g., endl, setw(this is in iomanip header file), etc.
+
+operator precedence describes the order of priority or associativity on which the operator is going to execute.
+----------------------
+
+if-else & control structures:
+
+control structure gives flow and logic to a program.
+
+types of basic control structure:
+    1. Sequence structure
+    2. Selection structure
+    3. Loop structure
+
+Sequence structure : Entry -> Action 1 -> Action 2 -> Exit.
+
+Selection structure : Entry -> condition 1 -> Action 1 or else Action 2 -> Exit.
+
+Loop structure : Entry -> condition 1 -> Action 1 repeats till condition 1 is differed then Action 2 -> Exit.
+
+if-else, elif and switch case statement is shown as in code6.cpp.
+
+----------------------
+
+for, while and do-while loops in C++:
+
+loops in C++:
+    There are 3 types of loops in C++:
+        1. For loop
+        2. While loop
+        3. Do-while loop
+
+difference between for loop, while loop and do-while loop.
+
+----------------------
+
+Break and continue:
+
+"break" function breaks and exits the loop chain if the related condition becomes true. Some loop function syntax may atleast run or print the code related to break function once.
+"continue" function skips the loop code if the related condition becomes true and continues to run rest of the loop chain.
+----------------------
+
+Pointers in C++: pointer (indicated using star *) is a type of datatype that holds the address of other datatypes. Here, "reference in C++ (i.e., &)" is needed for better understanding. 
+
+& means 'Address of' operator.
+* means 'Dereference' operator.
+
+pointers are used to store the address of other datatype in the computer's memory. It reserves the address of that datatype until program exits.
+
+To see the memory address in which the other datatype is stored, here is an example:
+    int a = 1;
+    int* b = &a;
+    cout<<b<<endl;
+This will return an address of the memory in which interger "a" is stored.
+
+If we want to see address of a datatype but without using pointer variable, then we can do as following example:
+    int a = 1;
+    cout<<&a<<endl;
+By doing this we cannot store the address of variable "a" but we can only see it.
+
