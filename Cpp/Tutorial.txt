@@ -67,6 +67,9 @@ Common operators in C++:
     3. Comparision Operators : <, >, <=, >=, ==, !=, etc.
     4. Logical Operators : &&, ||, !(bool), etc.
     5. Increment and decrement operators : i++, i--, ++i, --i, i+=n, i-=n, etc.
+
+simple increment : i++, ++i, i--, --i
+specified increment : i+=n, i-=n
 ----------------------
 
 Reference variables & Typecasting:
@@ -189,3 +192,48 @@ this will return output such as:
     12
     33
     21
+
+Application between pointers and arrays:
+
+We cannot assign a normal variable to an array, But we can assign a pointer variable to an array.
+While assigning a pointer to an array we do not put 'address of' operator with array.
+Here is an example:
+    int box[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+    int* p = box;
+By doing this we have initiated a pointer and assigned it with an array 'box'.
+
+pointer arithmetic:
+    new address = current address + i * size of datatype
+
+in code example:
+    int box[4] = {1,4,6,8};
+    int* p = box;
+    cout<<"value of box no. 0 : "<<*p<<endl;
+this will give result:
+    value of box no. 0 : 1
+
+to get all values we use loop function:
+    int box[4] = {1,4,6,8};
+    int* p = box;
+    for(int i, i < 4, i++)
+    {
+    cout<<"value of box no. "<<i<<" is "<<*(p+i)<<endl;
+    }
+this will give result:
+    value of box no. 0 : 1
+    value of box no. 1 : 4
+    value of box no. 2 : 6
+    value of box no. 3 : 8
+
+same program can be written by using while and do-while loop.
+
+we have written above code using specified Increment, but we can also write it using simple increment.
+such as:
+    int box[4] = {2,5,7,9};
+    int* p = box;
+    cout<<"The value at box[0] is : "<<*p++<<endl;
+    cout<<"The value at box[1] is : "<<*p++<<endl;
+    cout<<"The value at box[2] is : "<<*p++<<endl;
+    cout<<"The value at box[3] is : "<<*p++<<endl;
+the output will be as expected.
+Remember, we cannot go beyond the size of array using pointer or it will give nonsense output.
