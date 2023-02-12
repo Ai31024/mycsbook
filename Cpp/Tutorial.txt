@@ -129,8 +129,9 @@ Break and continue:
 
 Pointers in C++: pointer (indicated using star *) is a type of datatype that holds the address of other datatypes. Here, "reference in C++ (i.e., &)" is needed for better understanding. 
 
-& means 'Address of' operator.
-* means 'Dereference' operator.
+& means 'Address of' operator and Reference variable.
+* means 'Dereference' operator and pointer variable.
+** means pointer to pointer variable and double dereference operator. This pointer tells us the address of the another pointer. 
 
 pointers are used to store the address of other datatype in the computer's memory. It reserves the address of that datatype until program exits.
 
@@ -145,3 +146,46 @@ If we want to see address of a datatype but without using pointer variable, then
     cout<<&a<<endl;
 By doing this we cannot store the address of variable "a" but we can only see it.
 
+In order to see the value at address stored by the pointer we should use dereference operator. like in the following example:
+    int a = 1;
+    int* b = &a;
+    cout<<"value at address of pointer 'b' : "<<*b<<endl;
+this will give output as:
+    value at address of pointer 'b' : 1
+it literally gives out the value at address stored in pointer.
+
+We can also put a pointer variable on a pointer variable. We do that by putting double stars on the datatype and assign it to another pointer as a reference. That will be called pointer to pointer variable. This stores the memory address of another pointer. We can see in the following example:
+    int a = 1;
+    int* b = &a;
+    int** c = &b;
+By writing this we can store address of an address, that stores an address of a variable.
+In order to know the value at address of an address, We use double dereference operator.
+
+we can create multiple pointer to pointers by using multiple stars and to get value at address we should use multiple dereference operators.
+----------------------
+
+Arrays and Pointers in C++:
+
+Arrays:
+    Array is a collection of items of similar type stored in contigous memory locations. 
+    Sometimes a simple variable is not enough to hold all the data.
+    For example, lets say we want to store the marks of 2500 students, having 2500 different marks. For simple variable this task is not feasible.
+    To solve this problem, we can define an array with size of 2500 that can hold the marks of all students.
+
+Continuing the above example, if we want to initiate an array variable, we should write it as:
+    int marks[2500];
+
+We can also create an undefined size of array on initialization but the amount of element assigned to it later will define the size of array. Example:
+    int box[] = {12,22,13,43,22,24};
+this array size started as undefined but after assigning elements define size to it.
+
+lets create an array of size 4:
+    int box[4] = {12, 32, 33, 21};
+by calling array with its element will give us the value stored in that element. Example:
+    cout<<box[0]<<endl;
+    cout<<box[2]<<endl;
+    cout<<box[3]<<endl;
+this will return output such as:
+    12
+    33
+    21
