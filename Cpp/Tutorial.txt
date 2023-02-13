@@ -329,3 +329,69 @@ output will be:
 
 Functions and function prototypes:
 
+Functions or functional programming (aka top-down programming) lets us create a program using many smaller function that are design to do a specific task and then they are called accordingly in the final main function.
+
+for example:
+    int fx1 (a, b)
+    {
+        int c;
+        // some code written for fx1
+        return c;
+    }
+
+    int fx2 (x, y)
+    {
+        int z;
+        // some code written for fx2
+        return z;
+    }
+
+    int main()
+    {
+        int a1, a2;
+        cout<<"some string"<<fx1(a1, a2);
+        // this will call fx1
+        // main's variable will be assigned into fx1 variable
+        // the function block fx1 will work using main's variable.
+
+        int b1, b2;
+        cout<<"some string"<<fx2(b1, b2);
+        // this will call fx2 and in same way the procedure will take place.
+
+        return 0;
+    }
+
+Function prototypes:
+
+In case of writing a function block after the main block we should use 'function prototypes'.
+By doing so, we assure the compiler that the smaller function will be there after the main block.
+
+syntax:
+
+    'datatype' 'function name' ('arguments')
+
+example:
+
+    int fx1(int a, int b);
+
+    int main()
+    {
+        int a1, a2;
+        cout<<"some string"<<fx1(a1, a2);
+        // this will call fx1
+        // main's variable will be assigned into fx1 variable
+        // the function block fx1 will work using main's variable.
+
+        int b1, b2;
+        cout<<"some string"<<fx2(b1, b2);
+        // this will call fx2 and in same way the procedure will take place.
+
+        return 0;
+    }
+
+    int fx1 (a, b)
+    {
+        int c;
+        // some code written for fx1
+        return c;
+    }

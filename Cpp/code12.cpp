@@ -1,31 +1,24 @@
-// Structure, Union and Enums: (cont.)
-// here we are using typedef for Structure.
-
 #include<iostream>
 using namespace std;
 
-typedef struct workforce                                   // typedef gives simple names
+int sum(int a, int b)
 {
-    int idn;                                               // element 1
-    string name;                                           // element 2
-    float salary;                                          // element 3
-    char shift;                                            // element 4
-
-}wf1;                                                      // wf1 is choosen as simple name
-
+    int c;
+    c = a + b;
+    return c;
+}
 
 int main()
 {
-    wf1 comrade1;                                          // Here wf1 replaces 'struct workforce'
-    comrade1.idn = 12041;
-    comrade1.name = "Azam";
-    comrade1.salary = 18000;
-    comrade1.shift = 'G';
+    int a1, a2;
 
-    cout<<"ID number:           "<<comrade1.idn<<endl;
-    cout<<"Name of Comrade:     "<<comrade1.name<<endl;
-    cout<<"Payroll per month:   "<<comrade1.salary<<endl;
-    cout<<"Duty shift:          "<<comrade1.shift<<endl;
+    cout<<"Enter value 1"<<endl;
+    cin>>a1;
+
+    cout<<"Enter value 2"<<endl;
+    cin>>a2;
+
+    cout<<"Sum of "<<a1<<" and "<<a2<<" is : "<<sum(a1, a2)<<endl;
     
     return 0;
 }
