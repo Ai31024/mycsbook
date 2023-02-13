@@ -4,7 +4,7 @@ for reference : https://en.cppreference.com/w/
 -----------------------
 Variable Scope & Data Types
 
-Variables, scopes:
+Variables, scopes: (see code1)
 
 A Variable is a container to hold data 
 primarily these are : 
@@ -25,7 +25,7 @@ Global and Local variable can have same name.
 
 calling a variable inside a function always prefers the local variable.
 -----------------------
-Data Types:
+Data Types: (see code1)
 
 Data Types define the type of data a variable can hold, for example an integer variable can hold integer data, a Character type variable can hold Character data etc.
 
@@ -42,7 +42,7 @@ Rules to declare variables in c++:
     5. No space or special characters are allowed.
     6. You cannot use a C++ reserved keywords as a variable name.
 -----------------------
-Basic i/o in c++:
+Basic i/o in c++: (see code2)
 
 << is called Insertion operator.
 >> is called Extraction operator.
@@ -51,7 +51,7 @@ cout is "console out"
 cin is "console in"
 
 -----------------------
-Header files & Operators:
+Header files & Operators: (see code3)
 
 There are 2 type of header files.
 
@@ -72,7 +72,7 @@ simple increment : i++, ++i, i--, --i
 specified increment : i+=n, i-=n
 ----------------------
 
-Reference variables & Typecasting:
+Reference variables & Typecasting: (see code4)
 
 Reference variables means that one variable can be called using different names. To make a different name refer to a perticular variable, we should use (&) sign before it.
 i.e.,
@@ -84,7 +84,7 @@ Because "b" became a different name for calling "a". Here, "b" refers to "a".
 TypeCasting means to convert one type of datatype into another type of datatype.
 ----------------------
 
-Constants, Manipulators & Operator precedence:
+Constants, Manipulators & Operator precedence: (see code5)
 
 Constants are just read only variables. Once they are written then that cannot change. written as "const".
 
@@ -93,7 +93,7 @@ Manipulators are text modifiers that modifies the output texts. e.g., endl, setw
 operator precedence describes the order of priority or associativity on which the operator is going to execute.
 ----------------------
 
-if-else & control structures:
+if-else & control structures: (see code6)
 
 control structure gives flow and logic to a program.
 
@@ -112,7 +112,7 @@ if-else, elif and switch case statement is shown as in code6.cpp.
 
 ----------------------
 
-for, while and do-while loops in C++:
+for, while and do-while loops in C++: (see code7)
 
 loops in C++:
     There are 3 types of loops in C++:
@@ -124,13 +124,15 @@ difference between for loop, while loop and do-while loop.
 
 ----------------------
 
-Break and continue:
+Break and continue: (see code8)
 
 "break" function breaks and exits the loop chain if the related condition becomes true. Some loop function syntax may atleast run or print the code related to break function once.
 "continue" function skips the loop code if the related condition becomes true and continues to run rest of the loop chain.
 ----------------------
 
-Pointers in C++: pointer (indicated using star *) is a type of datatype that holds the address of other datatypes. Here, "reference in C++ (i.e., &)" is needed for better understanding. 
+Pointers in C++: (see code9)
+
+Pointer (indicated using star *) is a type of datatype that holds the address of other datatypes. Here, "reference in C++ (i.e., &)" is needed for better understanding. 
 
 & means 'Address of' operator and Reference variable.
 * means 'Dereference' operator and pointer variable.
@@ -167,7 +169,7 @@ In order to know the value at address of an address, We use double dereference o
 we can create multiple pointer to pointers by using multiple stars and to get value at address we should use multiple dereference operators.
 ----------------------
 
-Arrays and Pointers in C++:
+Arrays and Pointers in C++: (see code10)
 
 Arrays:
     Array is a collection of items of similar type stored in contigous memory locations. 
@@ -237,3 +239,93 @@ such as:
     cout<<"The value at box[3] is : "<<*p++<<endl;
 the output will be as expected.
 Remember, we cannot go beyond the size of array using pointer or it will give nonsense output.
+----------------------
+
+Structure, Union and Enums: (see code11, code12 & code13)
+
+Structure:
+
+In an array, datatype of every elemnent inside it is same.
+But if we want to have an array like variable but with different datatype element, We should use Structure by using keyword 'Struct'.
+
+syntax using an example:
+
+    struct table                                    // Global Variable (can also be a local variable)
+    {
+        int a;
+        float b;
+        char c;
+    };
+
+    int main()
+    {
+        struct table box;
+        box.a = 1024;
+        box.b = 22.7;
+        box.c = 'A' ;
+
+        cout<<"Value of 'a' for box on struct table is: "<<box.a<<endl;
+        cout<<"Value of 'b' for box on struct table is: "<<box.b<<endl;
+        cout<<"Value of 'c' for box on struct table is: "<<box.c<<endl;
+    }
+
+the output will be:
+
+    Value of 'a' for box on struct table is: 1024
+    Value of 'b' for box on struct table is: 22.7
+    Value of 'c' for box on struct table is: A
+
+If we want to simplify struct then we can use typedef before creating a 'struct' and name it whatever is convienient.
+
+Union:
+
+Union is very similar to Structure. Union can create multiple elements but, only allows to assign value to one of them.
+Union saves a lot of memory space by sharing common memory among all elements.
+It only allocates the maximum memory required among all the elements.
+Unlike structure where every element's memory is added up and then allocated.
+
+syntax using an example:
+
+    union table                                    // Global Variable (can also be local variable)
+    {
+        int a;
+        float b;
+        char c;
+    };
+
+    int main()
+    {
+        union table box;
+        box.a = 1024;
+        cout<<"Value of 'a' for box on union table is: "<<box.a<<endl;
+    }
+
+the output will be:
+
+    Value of 'a' for box on union table is: 1024
+
+Enums: 
+
+this enumerates elements position with any variable.
+
+syntax using an example:
+
+    enum name {a, b, c};               // created an enum named 'name' with elements a, b, c.
+
+    name x = a;                        // assigned x with a.
+    name y = b;                        // assigned y with b.
+    name z = c;                        // assigned z with c.
+
+    cout<<x<<endl;                     // console out x
+    cout<<y<<endl;                     // console out y
+    cout<<z<<endl;                     // console out z
+
+output will be:
+    0                                  // because x is assigned with a whose position is 0.
+    1                                  // because y is assigned with b whose position is 1.
+    2                                  // because z is assigned with c whose position is 2.
+
+----------------------
+
+Functions and function prototypes:
+
