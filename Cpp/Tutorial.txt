@@ -241,7 +241,7 @@ the output will be as expected.
 Remember, we cannot go beyond the size of array using pointer or it will give nonsense output.
 ----------------------
 
-Structure, Union and Enums: (see code11, code12 & code13)
+Structure, Union and Enums: (see code11_1, code11_2 & code11_3)
 
 Structure:
 
@@ -327,7 +327,15 @@ output will be:
 
 ----------------------
 
-Functions and function prototypes:
+Functions and function prototypes: (see code12_1, code12_2 & code12_3)
+
+Before getting into the rest of it, we should know what Formal and Actual parameters are.
+
+Formal parameters: the variables or arguments inside the function block are called 'Formal parameters'.
+
+Actual parameters: the variables or arguments inside the main block are called 'Actual parameters'.
+
+Very important note! formal and actual parameters must be in respect to each other.
 
 Functions or functional programming (aka top-down programming) lets us create a program using many smaller function that are design to do a specific task and then they are called accordingly in the final main function.
 
@@ -351,8 +359,8 @@ for example:
         int a1, a2;
         cout<<"some string"<<fx1(a1, a2);
         // this will call fx1
-        // main's variable will be assigned into fx1 variable
-        // the function block fx1 will work using main's variable.
+        // Actual parameters will be assigned into fx1 Formal parameters.
+        // the function block fx1 will work using Actual parameters.
 
         int b1, b2;
         cout<<"some string"<<fx2(b1, b2);
@@ -365,6 +373,7 @@ Function prototypes:
 
 In case of writing a function block after the main block we should use 'function prototypes'.
 By doing so, we assure the compiler that the smaller function will be there after the main block.
+In the end, even in doing so will create a top-down program. Because we are invoking function prototype before main block.
 
 syntax:
 
@@ -395,3 +404,113 @@ example:
         // some code written for fx1
         return c;
     }
+
+----------------------
+
+Call by value & call by reference: (see code13_1)
+This will be using pointers, address and dereference
+
+Call by value: this invokation will call variable's value using its actual value.
+Here are two examples of 'call by reference':
+
+    void swap(int a, int b)
+    {
+        int temp = a;
+        a = b;
+        b = temp;
+    }
+
+    int main()
+    {
+        int a = 5, b = 7;
+        cout<<"Old values of 'a' is "<<a<<" and 'b' is "<<b<<endl;
+        swap(a,b);
+        cout<<"New values of 'a' is "<<a<<" and 'b' is "<<b<<endl;
+        return 0;
+    }
+
+
+Call by reference: this invokation will call variable's value using reference.
+In C++ call by reference can be done using two methods:
+    1. call by reference by using pointer Variables.
+    2. call by reference by using reference Variable.
+
+For manipulation of variables between function and main block, 'Call by value' is not very useful.
+Because when we relate actual and formal parameters, they just make a new copy of themselves
+and manipulation takes place in old variable copy but when we want to see manipulated results,
+it shows the new variable copy which is not affected by the manipulation.
+
+Therefore, we use 'call by reference' because it refers the memory address of the variable,
+through which manipulation of variables between function and main block occurs.
+
+Here are two examples of 'call by reference':
+
+    // Call by reference using pointer variables:
+
+    void swap(int* a, int* b)                      //Here we used pointer variables many times and
+    {                                              //we had to use reference variable on time.
+        int temp = *a;
+        *a = *b;
+        *b = temp;
+    }
+
+    int main()
+    {
+        int a = 5, b = 7;
+        cout<<"Old values of 'a' is "<<a<<" and 'b' is "<<b<<endl;
+        swap(&a,&b);                               //Here we used reference variable.
+        cout<<"New values of 'a' is "<<a<<" and 'b' is "<<b<<endl;
+        return 0;
+    }
+
+    // Call by reference using reference variables:
+
+    void swap(int &a, int &b)                       //Here we only used reference variable once.
+    {                                               //while rest of the code looks very normal.
+        int temp = a;
+        a = b;
+        b = temp;
+    }
+
+    int main()
+    {
+        int a = 5, b = 7;
+        cout<<"Old values of 'a' is "<<a<<" and 'b' is "<<b<<endl;
+        swap(a,b);
+        cout<<"New values of 'a' is "<<a<<" and 'b' is "<<b<<endl;
+        return 0;
+    }
+----------------------
+
+Inline functions, Default arguments & Constant arguments: (see code14)
+
+Inline function: 
+    C++ provides an inline functions to reduce the function call overhead.
+    Inline function is a function that is expanded in line when it is called.
+    When the inline function is called whole code of the inline function gets inserted 
+    or substituted at the point of inline function call.
+    This substitution is performed by the C++ compiler at compile time.
+    Inline function may increase efficiency if it is small.
+
+Static function:
+    This function allow certain code to execute only once when that block is called for first time. For later number of recallation, static function code will not be executed and any variable related to static code will be retained.
+
+    It is advised to not use Inline function with static function. Inline function should only be used for simplest of code. It should not be used with loops either.
+
+Default arguments:
+    The arguments that we put in the function block are normally considered as a default arguments.
+    Hence if situation requires we can override these arguments by putting our different value in the main block when we call it there.
+    Here the emphesis should be given to arguments only, not assignments.
+    By defination, Default is a word that means an action which will occur as prescribed unless any intervention is applied.
+
+
+Constant arguments:
+    The arguments, which one may want to strictly remain unchanged. They can put 'const' in their argument of a function block to do that.
+    This type of arguments are mostly utilized when one must deal with pointers and reference.
+----------------------
+
+Recursions & Recursive function:
+
+Recursions & Recursive function:
+    A process that repeats itself many times until certain condition is met is called, Recursion. And a function that does a process recursion is called 'Recursive Function'.
+
