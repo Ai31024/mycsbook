@@ -509,8 +509,59 @@ Constant arguments:
     This type of arguments are mostly utilized when one must deal with pointers and reference.
 ----------------------
 
-Recursions & Recursive function:
+Recursions & Recursive function: (see code15)
 
 Recursions & Recursive function:
-    A process that repeats itself many times until certain condition is met is called, Recursion. And a function that does a process recursion is called 'Recursive Function'.
+    A process that repeats itself many times until certain condition is met is called, Recursion.
+    And a Recursive function is that which calls itselfs many times.
 
+Recurvise function can create a big overhead during process. It is advised to use it responsibly.
+If possible to use iterative process instead of recursive function then use that instead.
+----------------------
+
+Function Overloading with examples in C++: (see code16_1, code16_2)
+
+Polymorphism: One thing that have many forms.
+Function overloading means to use a funtion of a same name for applications of different form.
+
+in C++, polymorphism can occur.
+Compiler of C++ can automatically detect correct form of function to apply on a code when number and type of argument matches with each other.
+----------------------
+
+(OOP is nothing but a method or a style of programming.)
+
+Object Oriented Programming in C++:
+
+As the size of the program increases, readability, maintainability and bug-free nature of program decreases.
+Data security in C was not taken in high priority which led to data compromises.
+Using classes solves this problem by modelling program as a real world scenario.
+In OOP, users can basically create not only their own variables but datatypes as well.
+
+Difference between Procedural oriented programming and Object Oriented programming.
+
+POP:
+    Consists of writing a set of instructions for the computer to follow.
+    Main focus is on functions and on the flow of data.
+    Functions can either use local or global data.
+    Data moves openly from function to function.
+
+OOP:
+    Works on the concept of classes and objects.
+    A class is a template to create objects.
+    Treats data as a critical element.
+    Decomposes the problem in objects and builds data and functions around the objects.
+
+Basic concepts in OOP:
+    Classes - Basic template for creating objects.
+    Objects - Basic run time entities.
+    Data Abstraction & encapsulation - wrapping data and functions into single unit.
+    Inheritance - Properties of one class can be inherited into others.
+    Polymorphism - Ability to take more than one form.
+    Dynamic Hiding - code which will execute is not known until the program runs.
+    Message passing - Object.message (information) call format.
+
+Benefits of OOP:
+    Better code reusability using objects and inheritance.
+    Principle of data hiding helps build secure systems.
+    Multiple objects can co-exist without any interference.
+    Software complexity can be easily managed.
