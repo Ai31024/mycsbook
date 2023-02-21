@@ -10,12 +10,12 @@ class comrade
 	void setData(int sal_rt, int sal, int nxt_eve, char perf);
 	void getData()
 	{
-		std::cout<<"Employee ID: "<<employee_id<<std::endl;
-		std::cout<<"Employee name: "<<name<<std::endl;
-		std::cout<<"Salary Rate: "<<salary_rate<<std::endl;
-		std::cout<<"Salary: "<<salary<<std::endl;
+		std::cout<<"Employee ID   : "<<employee_id<<std::endl;
+		std::cout<<"Employee name : "<<name<<std::endl;
+		std::cout<<"Salary Rate   : "<<salary_rate<<std::endl;
+		std::cout<<"Salary        : "<<salary<<std::endl;
 		std::cout<<"Next Promotion: "<<next_event<<" years later"<<std::endl;
-		std::cout<<"Performance: "<<performance<<std::endl;
+		std::cout<<"Performance   : "<<performance<<std::endl;
 	}
 };
 void comrade::setData(int sal_rt, int sal, int nxt_eve, char perf)
