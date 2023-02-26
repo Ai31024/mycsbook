@@ -1,0 +1,15 @@
+Curriculam of a self-taught developer.
+
+Things to learn:
+
+    1. What type of Programming language to learn. Learn fundamentals of programming language.
+    2. Try solving practice-problems.
+    3. Learn Object Oriented Programming.
+    4. Work on a simple project and also practice.
+    5. Dive into advance programming concepts.
+    6. learn to write code in standard format and optimal and clean code.
+    7. learn about Git, GitHub and terminal commands.
+    8. learn mathematics concepts.
+    9. learn Data structure and algorithm.
+    10. learn computer science theory.
+    11. make your own projects.

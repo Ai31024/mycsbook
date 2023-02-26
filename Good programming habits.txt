@@ -1,0 +1,10 @@
+Good programming habits to follow to be a better programmer
+
+Here are is list:
+
+    1. Designing and planning
+    2. Testing
+    3. Documentation
+    4. Automation
+    5. Writing clean code with standard formatting
+    6. Improve programming by learning new things.
