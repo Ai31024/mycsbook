@@ -1,0 +1,1 @@
+// Array of object & passing objects as function argument.
