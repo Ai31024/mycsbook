@@ -582,6 +582,3 @@ Benefits of OOP:
 
 Classes, Public and Private access modifiers in C++: (see code17_1, code17_2)
 
--|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-
-Further tutorial is been skipped and is suggested to see source code.
--|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-
