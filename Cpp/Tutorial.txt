@@ -142,7 +142,8 @@ Here, "reference in C++ (i.e., &)" is needed for better understanding.
 * means 'Dereference' operator and pointer variable.
 ** means pointer to pointer variable and double dereference operator. This pointer tells us the address of the another pointer.
 
-pointers are used to store the address of other datatype in the computer's memory. It reserves the address of that datatype until program exits.
+pointers are used to store the address of other datatype in the computer's memory.
+It reserves the address of that datatype until program exits.
 
 To see the memory address in which the other datatype is stored, here is an example:
     int a = 1;
