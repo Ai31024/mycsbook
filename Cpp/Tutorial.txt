@@ -14,7 +14,7 @@ primarily these are :
     4. double : Double float, i.e., 5.4432223 etc.
     5. bool : Boolean, i.e., True (1) or False (0)
 
-eg: > int sum = 34 ; This means, the term called "sum" is an integer which holds value 34 in the memory.
+eg: int sum = 34 ; This means, the term called "sum" is an integer which holds value 34 in the memory.
 
 Based on scope, variable can be classified into two types: 1. Local Variables 2. Global Variables
 
@@ -108,7 +108,7 @@ Selection structure : Entry -> condition 1 -> Action 1 or else Action 2 -> Exit.
 
 Loop structure : Entry -> condition 1 -> Action 1 repeats till condition 1 is differed then Action 2 -> Exit.
 
-if-else, elif and switch case statement is shown as in code6.cpp.
+if-else, else if and switch case statement is shown as in code6.cpp.
 
 ----------------------
 

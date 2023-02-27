@@ -33,10 +33,10 @@ int main()
     // cout<<y<<endl;
 
     // ----- TypeCasting -----
-    // int a = 45;
-    // float b = 45.33;
-    // cout<<"the value of a is "<<(float)a<<endl; // a is seen as float value only for this case.
-    // cout<<"the value of b is "<<(int)b<<endl; // b is seen as integer value only for this case.
+    int a = 45;
+    float b = 45.33;
+    cout<<"the value of a is "<<(float)a<<endl; // a is seen as float value only for this case.
+    cout<<"the value of b is "<<(int)b<<endl; // b is seen as integer value only for this case.
 
     // ----- Examples of typecasting related to above -----
 

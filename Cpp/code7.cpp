@@ -33,6 +33,7 @@ int main(int argc, char const *argv[])
     while(condition)
     {
         C++ statement;
+        updation code;
     }
     */
     /*
@@ -43,7 +44,7 @@ int main(int argc, char const *argv[])
         a+=10;
     }
     */
-    // do-while loop: This loop runs code atleast one time even if the while condition is false. this loop function is more stable but runs slower than while loop.
+    // do-while loop: This loop runs code atleast one time even if the while condition is false. this loop function is more stable as it runs slower than while loop.
 
     // syntax of 'do-while loop':
     /*
@@ -51,6 +52,7 @@ int main(int argc, char const *argv[])
     do
     {
         C++ statement;
+        Updation code;
     }
     while(condition);
     */
@@ -65,9 +67,10 @@ int main(int argc, char const *argv[])
     */
 
     int num;
-    int i=0;
     cout<<"Enter a number for multiplication table till ten : ";
     cin>>num;
+    
+    int i=0;
     do
     {
         cout<<num<<" x "<<i<<" = "<<num*i<<endl;
