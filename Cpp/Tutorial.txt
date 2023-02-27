@@ -6,8 +6,8 @@ Variable Scope & Data Types
 
 Variables, scopes: (see code1)
 
-A Variable is a container to hold data 
-primarily these are : 
+A Variable is a container to hold data
+primarily these are :
     1. int : integer, i.e., 0, 1, 2... 9 or 23, 334, 55332
     2. float : Float, i.e., 0.1, 2.3, 22.7
     3. char : Character, i.e., a to z or A to Z
@@ -27,10 +27,11 @@ calling a variable inside a function always prefers the local variable.
 -----------------------
 Data Types: (see code1)
 
-Data Types define the type of data a variable can hold, for example an integer variable can hold integer data, a Character type variable can hold Character data etc.
+Data Types define the type of data a variable can hold
+for example an integer variable can hold integer data, a Character type variable can hold Character data etc.
 
 Data Types in Cpp are categorised in three group:
-1. Build-in. 
+1. Build-in.
 2. User-Defined.
 3. Derived.
 
@@ -74,7 +75,8 @@ specified increment : i+=n, i-=n
 
 Reference variables & Typecasting: (see code4)
 
-Reference variables means that one variable can be called using different names. To make a different name refer to a perticular variable, we should use (&) sign before it.
+Reference variables means that one variable can be called using different names.
+To make a different name refer to a perticular variable, we should use (&) sign before it.
 i.e.,
     int a = 10;
     int &b = a;
@@ -126,17 +128,19 @@ difference between for loop, while loop and do-while loop.
 
 Break and continue: (see code8)
 
-"break" function breaks and exits the loop chain if the related condition becomes true. Some loop function syntax may atleast run or print the code related to break function once.
+"break" function breaks and exits the loop chain if the related condition becomes true.
+Some loop function syntax may atleast run or print the code related to break function once.
 "continue" function skips the loop code if the related condition becomes true and continues to run rest of the loop chain.
 ----------------------
 
 Pointers in C++: (see code9)
 
-Pointer (indicated using star *) is a type of datatype that holds the address of other datatypes. Here, "reference in C++ (i.e., &)" is needed for better understanding. 
+Pointer (indicated using star *) is a type of datatype that holds the address of other datatypes.
+Here, "reference in C++ (i.e., &)" is needed for better understanding.
 
 & means 'Address of' operator and Reference variable.
 * means 'Dereference' operator and pointer variable.
-** means pointer to pointer variable and double dereference operator. This pointer tells us the address of the another pointer. 
+** means pointer to pointer variable and double dereference operator. This pointer tells us the address of the another pointer.
 
 pointers are used to store the address of other datatype in the computer's memory. It reserves the address of that datatype until program exits.
 
@@ -159,7 +163,9 @@ this will give output as:
     value at address of pointer 'b' : 1
 it literally gives out the value at address stored in pointer.
 
-We can also put a pointer variable on a pointer variable. We do that by putting double stars on the datatype and assign it to another pointer as a reference. That will be called pointer to pointer variable. This stores the memory address of another pointer. We can see in the following example:
+We can also put a pointer variable on a pointer variable. We do that by putting double stars on the datatype
+and assign it to another pointer as a reference. That will be called pointer to pointer variable.
+This stores the memory address of another pointer. We can see in the following example:
     int a = 1;
     int* b = &a;
     int** c = &b;
@@ -172,15 +178,17 @@ we can create multiple pointer to pointers by using multiple stars and to get va
 Arrays and Pointers in C++: (see code10)
 
 Arrays:
-    Array is a collection of items of similar type stored in contigous memory locations. 
+    Array is a collection of items of similar type stored in contigous memory locations.
     Sometimes a simple variable is not enough to hold all the data.
-    For example, lets say we want to store the marks of 2500 students, having 2500 different marks. For simple variable this task is not feasible.
+    For example, lets say we want to store the marks of 2500 students, having 2500 different marks.
+    For simple variable this task is not feasible.
     To solve this problem, we can define an array with size of 2500 that can hold the marks of all students.
 
 Continuing the above example, if we want to initiate an array variable, we should write it as:
     int marks[2500];
 
-We can also create an undefined size of array on initialization but the amount of element assigned to it later will define the size of array. Example:
+We can also create an undefined size of array on initialization but the amount of element assigned to it later will define the size of array.
+Example:
     int box[] = {12,22,13,43,22,24};
 this array size started as undefined but after assigning elements define size to it.
 
@@ -304,7 +312,7 @@ the output will be:
 
     Value of 'a' for box on union table is: 1024
 
-Enums: 
+Enums:
 
 this enumerates elements position with any variable.
 
@@ -337,7 +345,8 @@ Actual parameters: the variables or arguments inside the main block are called '
 
 Very important note! formal and actual parameters must be in respect to each other.
 
-Functions or functional programming (aka top-down programming) lets us create a program using many smaller function that are design to do a specific task and then they are called accordingly in the final main function.
+Functions or functional programming (aka top-down programming) lets us create a program using many smaller function
+that are design to do a specific task and then they are called accordingly in the final main function.
 
 for example:
     int fx1 (a, b)
@@ -484,18 +493,20 @@ Here are two examples of 'call by reference':
 
 Inline functions, Default arguments & Constant arguments: (see code14)
 
-Inline function: 
+Inline function:
     C++ provides an inline functions to reduce the function call overhead.
     Inline function is a function that is expanded in line when it is called.
-    When the inline function is called whole code of the inline function gets inserted 
+    When the inline function is called whole code of the inline function gets inserted
     or substituted at the point of inline function call.
     This substitution is performed by the C++ compiler at compile time.
     Inline function may increase efficiency if it is small.
 
 Static function:
-    This function allow certain code to execute only once when that block is called for first time. For later number of recallation, static function code will not be executed and any variable related to static code will be retained.
+    This function allow certain code to execute only once when that block is called for first time.
+    For later number of recallation, static function code will not be executed and any variable related to static code will be retained.
 
-    It is advised to not use Inline function with static function. Inline function should only be used for simplest of code. It should not be used with loops either.
+    It is advised to not use Inline function with static function. Inline function should only be used for simplest of code.
+    It should not be used with loops either.
 
 Default arguments:
     The arguments that we put in the function block are normally considered as a default arguments.
