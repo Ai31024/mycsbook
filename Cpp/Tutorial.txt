@@ -19,7 +19,8 @@ eg: int sum = 34 ; This means, the term called "sum" is an integer which holds v
 Based on scope, variable can be classified into two types: 1. Local Variables 2. Global Variables
 
 Scope of a variable is the region in code where the existence of variable is valid.
-Local Variable : Local variables are declared inside the braces of any function and can be accessed only from there.
+Local Variable : Local variables are declared inside the braces of any function and
+can be accessed only from there.
 Global Variable : Global variables are declared outside any function and can be accessed from anywhere.
 Global and Local variable can have same name.
 
@@ -90,7 +91,8 @@ Constants, Manipulators & Operator precedence: (see code5)
 
 Constants are just read only variables. Once they are written then that cannot change. written as "const".
 
-Manipulators are text modifiers that modifies the output texts. e.g., endl, setw(this is in iomanip header file), etc.
+Manipulators are text modifiers that modifies the output texts.
+e.g., endl, setw(this is in iomanip header file), etc.
 
 operator precedence describes the order of priority or associativity on which the operator is going to execute.
 ----------------------
@@ -130,7 +132,8 @@ Break and continue: (see code8)
 
 "break" function breaks and exits the loop chain if the related condition becomes true.
 Some loop function syntax may atleast run or print the code related to break function once.
-"continue" function skips the loop code if the related condition becomes true and continues to run rest of the loop chain.
+"continue" function skips the loop code if the related condition becomes true and
+continues to run rest of the loop chain.
 ----------------------
 
 Pointers in C++: (see code9)
@@ -140,7 +143,8 @@ Here, "reference in C++ (i.e., &)" is needed for better understanding.
 
 & means 'Address of' operator and Reference variable.
 * means 'Dereference' operator and pointer variable.
-** means pointer to pointer variable and double dereference operator. This pointer tells us the address of the another pointer.
+** means pointer to pointer variable and double dereference operator.
+This pointer tells us the address of the another pointer.
 
 pointers are used to store the address of other datatype in the computer's memory.
 It reserves the address of that datatype until program exits.
@@ -156,7 +160,8 @@ If we want to see address of a datatype but without using pointer variable, then
     cout<<&a<<endl;
 By doing this we cannot store the address of variable "a" but we can only see it.
 
-In order to see the value at address stored by the pointer we should use dereference operator. like in the following example:
+In order to see the value at address stored by the pointer we should use dereference operator.
+Like in the following example:
     int a = 1;
     int* b = &a;
     cout<<"value at address of pointer 'b' : "<<*b<<endl;
@@ -173,7 +178,8 @@ This stores the memory address of another pointer. We can see in the following e
 By writing this we can store address of an address, that stores an address of a variable.
 In order to know the value at address of an address, We use double dereference operator.
 
-we can create multiple pointer to pointers by using multiple stars and to get value at address we should use multiple dereference operators.
+we can create multiple pointer to pointers by using multiple stars
+and to get value at address we should use multiple dereference operators.
 ----------------------
 
 Arrays and Pointers in C++: (see code10)
@@ -188,7 +194,8 @@ Arrays:
 Continuing the above example, if we want to initiate an array variable, we should write it as:
     int marks[2500];
 
-We can also create an undefined size of array on initialization but the amount of element assigned to it later will define the size of array.
+We can also create an undefined size of array on initialization but the amount of element assigned to
+it later will define the size of array.
 Example:
     int box[] = {12,22,13,43,22,24};
 this array size started as undefined but after assigning elements define size to it.
@@ -255,7 +262,8 @@ Structure, Union and Enums: (see code11_1, code11_2 & code11_3)
 Structure:
 
 In an array, datatype of every elemnent inside it is same.
-But if we want to have an array like variable but with different datatype element, We should use Structure by using keyword 'Struct'.
+But if we want to have an array like variable but with different datatype element
+We should use Structure by using keyword 'Struct'.
 
 syntax using an example:
 
@@ -284,11 +292,13 @@ the output will be:
     Value of 'b' for box on struct table is: 22.7
     Value of 'c' for box on struct table is: A
 
-If we want to simplify struct then we can use typedef before creating a 'struct' and name it whatever is convienient.
+If we want to simplify struct then we can use typedef before creating a 'struct' and
+name it whatever is convienient.
 
 Union:
 
-Union is very similar to Structure. Union can create multiple elements but, only allows to assign value to one of them.
+Union is very similar to Structure.
+Union can create multiple elements but, only allows to assign value to one of them.
 Union saves a lot of memory space by sharing common memory among all elements.
 It only allocates the maximum memory required among all the elements.
 Unlike structure where every element's memory is added up and then allocated.
@@ -346,7 +356,9 @@ Actual parameters: the variables or arguments inside the main block are called '
 
 Very important note! formal and actual parameters must be in respect to each other.
 
-Functions or functional programming (aka top-down programming) lets us create a program using many smaller function
+Functions or functional programming (aka top-down programming)
+lets us create a program using many smaller function
+
 that are design to do a specific task and then they are called accordingly in the final main function.
 
 for example:
@@ -383,7 +395,8 @@ Function prototypes:
 
 In case of writing a function block after the main block we should use 'function prototypes'.
 By doing so, we assure the compiler that the smaller function will be there after the main block.
-In the end, even in doing so will create a top-down program. Because we are invoking function prototype before main block.
+In the end, even in doing so will create a top-down program.
+Because we are invoking function prototype before main block.
 
 syntax:
 
@@ -504,20 +517,25 @@ Inline function:
 
 Static function:
     This function allow certain code to execute only once when that block is called for first time.
-    For later number of recallation, static function code will not be executed and any variable related to static code will be retained.
+    For later number of recallation, static function code will not be executed
+    and any variable related to static code will be retained.
 
-    It is advised to not use Inline function with static function. Inline function should only be used for simplest of code.
+    It is advised to not use Inline function with static function.
+    Inline function should only be used for simplest of code.
     It should not be used with loops either.
 
 Default arguments:
     The arguments that we put in the function block are normally considered as a default arguments.
-    Hence if situation requires we can override these arguments by putting our different value in the main block when we call it there.
+    Hence if situation requires we can override these arguments by putting our different value
+    in the main block when we call it there.
     Here the emphesis should be given to arguments only, not assignments.
-    By defination, Default is a word that means an action which will occur as prescribed unless any intervention is applied.
+    By defination, Default is a word that means an action which will occur as
+    prescribed unless any intervention is applied.
 
 
 Constant arguments:
-    The arguments, which one may want to strictly remain unchanged. They can put 'const' in their argument of a function block to do that.
+    The arguments, which one may want to strictly remain unchanged.
+    They can put 'const' in their argument of a function block to do that.
     This type of arguments are mostly utilized when one must deal with pointers and reference.
 ----------------------
 
@@ -537,7 +555,8 @@ Polymorphism: One thing that have many forms.
 Function overloading means to use a funtion of a same name for applications of different form.
 
 in C++, polymorphism can occur.
-Compiler of C++ can automatically detect correct form of function to apply on a code when number and type of argument matches with each other.
+Compiler of C++ can automatically detect correct form of function to apply on a code when number and
+type of argument matches with each other.
 ----------------------
 
 (OOP is nothing but a method or a style of programming.)
