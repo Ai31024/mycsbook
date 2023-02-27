@@ -1,6 +1,5 @@
 //Pointers in C++:
 #include<iostream>
-#include<iomanip>
 using namespace std;
 
 int main()
