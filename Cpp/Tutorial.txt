@@ -51,6 +51,46 @@ Basic i/o in c++: (see code2)
 
 cout is "console out"
 cin is "console in"
+-----------------------
+Concatenate in C++:
+To concatenate two or more strings or characters we should use "+" between string or character variable.
+example:
+    string firstname = "Azam";
+    string lastname = "Irshad";
+    cout << firstname + lastname<<"\n";
+-----------------------
+Accessing character position in a string:
+To access a character from a perticular postion in string, we should use square brackets with
+desired position number.
+example:
+    string name = "Avalanch";
+    cout << name[1];
+output:
+    "v".
+-----------------------
+Replacing individual character from string:
+To replace a character from a string we need to assign that position using square brackets.
+example:
+    string name = "Maza";
+    name[0] = 'T';
+output:
+    "Taza".
+-----------------------
+getline function can also be used to get input:
+string name;
+cout<<"Give name: \n";
+getline(cin, name);
+cout<<"Entered name is: <<name<<"\n";
+-----------------------
+Just as above, an array can also be accessed or replaced by using square brackets.
+-----------------------
+max and min function:
+
+max function presents maximum value among the variety of inputs.
+min function presents minimum value among the variety of inputs.
+-----------------------
+for math functions, we should use cmath header file.
+it enables functions like sqrt, round,
 
 -----------------------
 Header files & Operators: (see code3)
@@ -96,7 +136,27 @@ e.g., endl, setw(this is in iomanip header file), etc.
 
 operator precedence describes the order of priority or associativity on which the operator is going to execute.
 ----------------------
+if-else can also be written using ternary operator:
 
+if-else syntax example:
+
+    int time = 20;
+    string result;
+    if(time<18)
+    {
+        cout<<"Good Morning\n";
+    }
+    else
+    {
+        cout<<"Good Evening\n";
+    }
+
+Same thing using ternary operator:
+
+    int time = 20;
+    string result = (time<18) ? "Good Morning\n" : "Good Evening\n";
+    cout<<result;
+----------------------
 if-else & control structures: (see code6)
 
 control structure gives flow and logic to a program.
@@ -390,7 +450,20 @@ for example:
 
         return 0;
     }
-
+----------------------
+When writing a function where some mathematic operation takes place,
+we should use "return" keyword following by arithmatics.
+example:
+    int add(int x, int y)
+    {
+        return x + y;
+    }
+    int main()
+    {
+        cout<<add(10, 20);
+        return 0;
+    }
+----------------------
 Function prototypes:
 
 In case of writing a function block after the main block we should use 'function prototypes'.
@@ -599,5 +672,16 @@ Benefits of OOP:
 
 ----------------------
 
-Classes, Public and Private access modifiers in C++: (see code17_1, code17_2)
+Classes, objects, Public and Private access specifiers in C++: (see code17_1, code17_2)
 
+Classes are a template which describe what an object will be like.
+
+Objects are related to class which access all the elements and functions from the class template.
+
+Public access specifier are part of class template that are accessable directly in object.
+
+Private access specifier are part of class template that are accessable ONLY through public function.
+if it is written.
+----------------------
+
+//To learn about Constructor, Inhertence and many more.//
