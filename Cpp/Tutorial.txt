@@ -77,6 +77,7 @@ output:
     "Taza".
 -----------------------
 getline function can also be used to get input:
+NOTE: This only works for string datatypes.
 string name;
 cout<<"Give name: \n";
 getline(cin, name);
