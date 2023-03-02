@@ -1,0 +1,2 @@
+Hello everyone!
+I'am writing text file inside python!

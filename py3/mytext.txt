@@ -1,0 +1,5 @@
+Hello everyone!
+I'm writing txt file inside python!
+Quick brown fox jumps over the lazy dog!
+I like sandwich very much!
+Goodbye!
