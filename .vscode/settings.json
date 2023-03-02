@@ -53,5 +53,7 @@
         "streambuf": "cpp",
         "typeinfo": "cpp"
     },
-    "C_Cpp.errorSquiggles": "enabled"
+    "C_Cpp.errorSquiggles": "enabled",
+    "editor.tabCompletion": "on",
+    "diffEditor.codeLens": true
 }
