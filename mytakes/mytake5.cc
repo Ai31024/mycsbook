@@ -1,8 +1,8 @@
-#include<iostream>
+#include <iostream>
 void func_default(std::string land = "India")
-//Land is optional parameter and "India" is it's default value.
+// Land is optional parameter and "India" is it's default value.
 {
-    std::cout<<"The country is : "<<land<<"\n";
+    std::cout << "The country is : " << land << "\n";
 }
 int main()
 {

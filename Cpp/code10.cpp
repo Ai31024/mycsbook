@@ -1,10 +1,10 @@
-// Arrays and Pointers in C++: https://www.github.com/Ai31024 
-#include<iostream>
+// Arrays and Pointers in C++: https://www.github.com/Ai31024
+#include <iostream>
 using namespace std;
 
 int main()
 {
-    int box[4]={12, 32, 33, 21};
+    int box[4] = {12, 32, 33, 21};
     // cout<<box[0]<<endl;
     // cout<<box[2]<<endl;
     // cout<<box[3]<<endl;
@@ -27,7 +27,7 @@ int main()
     //     i++;
     // } while (i<4);
 
-    int* p = box;
+    int *p = box;
 
     // cout<<"the value of box[0] is : "<<*p<<endl;
     // cout<<"the value of box[1] is : "<<*(p+1)<<endl;
@@ -60,14 +60,12 @@ int main()
     // cout<<*(++p)<<endl;
     // cout<<*(p++)<<endl;
     // cout<<*p<<endl;
-    
-    cout<<"The value at box[0] is : "<<*p++<<endl;
-    cout<<"The value at box[1] is : "<<*p++<<endl;
-    cout<<"The value at box[2] is : "<<*p++<<endl;
-    cout<<"The value at box[3] is : "<<*p++<<endl;
+
+    cout << "The value at box[0] is : " << *p++ << endl;
+    cout << "The value at box[1] is : " << *p++ << endl;
+    cout << "The value at box[2] is : " << *p++ << endl;
+    cout << "The value at box[3] is : " << *p++ << endl;
     // cout<<"The value at box[4] is : "<<*p++<<endl; we cannot go beyond the size of array using pointer or it will give nonsense output.
-
-
 
     return 0;
 }

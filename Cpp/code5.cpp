@@ -1,7 +1,8 @@
-#include<iostream>
-#include<iomanip>
+#include <iostream>
+#include <iomanip>
 using namespace std;
-int main(){
+int main()
+{
     // ----- Constants, Manipulators & Operator precedence-----
 
     // In the following code we can see it is easy to change the value of a variable

@@ -1,6 +1,6 @@
 // Calculator in C++:
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 // invoking function prototype.
@@ -16,53 +16,53 @@ int dvi(int, int);
 
 int main()
 {
-    hello();                                               // hello function
+    hello(); // hello function
 
-    int a, b;                                              // actual parameters
-    cout<<"Enter value of 'a' : "<<endl;
-    cin>>a;
-    cout<<"Enter value of 'b' : "<<endl;
-    cin>>b;
+    int a, b; // actual parameters
+    cout << "Enter value of 'a' : " << endl;
+    cin >> a;
+    cout << "Enter value of 'b' : " << endl;
+    cin >> b;
 
-    action();                                              // action function
+    action(); // action function
 
-    int s;                                                 // actual parameters
-    cout<<"Choose from option:\n1.sum\t2.sub\n3.mul\t4.dvi"<<endl;
-    cin>>s;
+    int s; // actual parameters
+    cout << "Choose from option:\n1.sum\t2.sub\n3.mul\t4.dvi" << endl;
+    cin >> s;
 
-    switch (s)                                             // switch case
+    switch (s) // switch case
     {
     case 1:
-        cout<<"The sum of "<<a<<" and "<<b<<" is: "<<sum(a,b)<<endl;
+        cout << "The sum of " << a << " and " << b << " is: " << sum(a, b) << endl;
         break;
     case 2:
-        cout<<"The sub of "<<a<<" and "<<b<<" is: "<<sub(a,b)<<endl;
+        cout << "The sub of " << a << " and " << b << " is: " << sub(a, b) << endl;
         break;
     case 3:
-        cout<<"The mul of "<<a<<" and "<<b<<" is: "<<mul(a,b)<<endl;
+        cout << "The mul of " << a << " and " << b << " is: " << mul(a, b) << endl;
         break;
     case 4:
-        cout<<"The dvi of "<<a<<" and "<<b<<" is: "<<dvi(a,b)<<endl;
+        cout << "The dvi of " << a << " and " << b << " is: " << dvi(a, b) << endl;
         break;
-    
+
     default:
-        cout<<"Please select the correct choice!";
+        cout << "Please select the correct choice!";
         break;
     }
-    
+
     return 0;
 }
 
 // action function block
 void action()
 {
-    cout<<"Please select an operation"<<endl;
+    cout << "Please select an operation" << endl;
 }
 
 // hello function block
 void hello()
 {
-    cout<<"Hello, please enter two values for calculation!"<<endl;
+    cout << "Hello, please enter two values for calculation!" << endl;
 }
 
 // sum function block

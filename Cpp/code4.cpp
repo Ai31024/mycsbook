@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 int c = 45;
 int main()
@@ -25,7 +25,7 @@ int main()
     // cout<<"The size of 34.4F is "<<sizeof(34.4F)<<endl;
     // cout<<"The size of 34.4l is "<<sizeof(34.4l)<<endl;
     // cout<<"The size of 34.4L is "<<sizeof(34.4L)<<endl;
-    
+
     // ----- Reference Variables -----
     // float x = 455;
     // float & y = x;
@@ -35,8 +35,8 @@ int main()
     // ----- TypeCasting -----
     int a = 45;
     float b = 45.33;
-    cout<<"the value of a is "<<(float)a<<endl; // a is seen as float value only for this case.
-    cout<<"the value of b is "<<(int)b<<endl; // b is seen as integer value only for this case.
+    cout << "the value of a is " << (float)a << endl; // a is seen as float value only for this case.
+    cout << "the value of b is " << (int)b << endl;   // b is seen as integer value only for this case.
 
     // ----- Examples of typecasting related to above -----
 

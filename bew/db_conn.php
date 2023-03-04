@@ -6,5 +6,3 @@ if ($con == false){
     die("Error: connection error.".mysqli_connect_error());
 }
 else{}
-
-?>

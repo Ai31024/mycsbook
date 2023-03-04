@@ -1,9 +1,10 @@
 // Array of object & passing objects as function argument.
-#include<iostream>
+#include <iostream>
 class employee
 {
 	int id;
 	int salary;
+
 public:
 	void setData(void)
 	{

@@ -1,66 +1,80 @@
 <!--from here html code is written 
 -By Mohammad Azam Irshad-->
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Index page</title>
-        <!--This CSS for beautification of webpage-->
-        <style>
-            /*This is style 1, let us call it pop0*/
-            .pop0{
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                border-style: double;
-                border-width: 3px;
-                border-color: lime;
-                background-color: rgba(246, 254, 255, 0.5);
-                text-align: center;
-            }
-            /*similarly pop1*/
-            .pop1{
-                font-family: monospace;
-            }
-            /*and pop2*/
-            .pop2{
-                background-image: url("back1.jpg");
-            }
-        </style>
-        <!--CSS is now on Global and we can call it by using required style name using class function-->
-    </head>
-    <body class="pop2">
-        <!--This is only done for aesthetic purpose-->
-        <h1><br></h1>
-        <hr>
-        <!--Here we want to create a login form-->
-        <div class="pop0">
-            <!--Housing division-->
-            <h3>Welcome to the login page</h3>
-            <div>
-                <!--Room division-->
-                <p>Please enter your username and password</p>
-                <br>
-                <form action="login.php" method="post"> <!--creating form whose action is to go with login.php with using method of post-->
-                <div>
-                    <!--Bed division 1-->
-                    <label class="pop1">Username: </label>
-                    <input type="text" name="username" placeholder="Username" id="username" required>
-                </div>
-                <br>
-                <div>
-                    <!--Bed division 2-->
-                    <label class="pop1">Password: </label>
-                    <input type="password" name="password" placeholder="Password" id="password" required>
-                </div>
-                <br><br>
-                <div>
-                    <!--Bed division 3-->
-                    <input type="submit" name="submit" value="Sign In">
-                </div>
-                <p>Create an account? <a href="signup.html">Sign Up!</a></p>
-                </form>
-            </div>
-        </div>
-        <hr>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index page</title>
+    <!--This CSS for beautification of webpage-->
+    <style>
+      /*This is style 1, let us call it pop0*/
+      .pop0 {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        border-style: double;
+        border-width: 3px;
+        border-color: lime;
+        background-color: rgba(246, 254, 255, 0.5);
+        text-align: center;
+      }
+      /*similarly pop1*/
+      .pop1 {
+        font-family: monospace;
+      }
+      /*and pop2*/
+      .pop2 {
+        background-image: url("back1.jpg");
+      }
+    </style>
+    <!--CSS is now on Global and we can call it by using required style name using class function-->
+  </head>
+  <body class="pop2">
+    <!--This is only done for aesthetic purpose-->
+    <h1><br /></h1>
+    <hr />
+    <!--Here we want to create a login form-->
+    <div class="pop0">
+      <!--Housing division-->
+      <h3>Welcome to the login page</h3>
+      <div>
+        <!--Room division-->
+        <p>Please enter your username and password</p>
+        <br />
+        <form action="login.php" method="post">
+          <!--creating form whose action is to go with login.php with using method of post-->
+          <div>
+            <!--Bed division 1-->
+            <label class="pop1">Username: </label>
+            <input
+              type="text"
+              name="username"
+              placeholder="Username"
+              id="username"
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <!--Bed division 2-->
+            <label class="pop1">Password: </label>
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              id="password"
+              required
+            />
+          </div>
+          <br /><br />
+          <div>
+            <!--Bed division 3-->
+            <input type="submit" name="submit" value="Sign In" />
+          </div>
+          <p>Create an account? <a href="signup.html">Sign Up!</a></p>
+        </form>
+      </div>
+    </div>
+    <hr />
+  </body>
 </html>

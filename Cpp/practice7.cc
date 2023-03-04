@@ -1,25 +1,30 @@
-#include<iostream>
+#include <iostream>
 
-class complex{
+class complex
+{
     int x;
     int y;
+
 public:
-    void assignData (int a, int b){
-        std::cin>>a
+    void assignData(int a, int b)
+    {
+        std::cin >> a;
         x = a;
         y = b;
     }
-    void addData (complex ob1, complex ob2){
+    void addData(complex ob1, complex ob2)
+    {
         x = ob1.x + ob2.x;
         y = ob1.y + ob2.x;
     }
-    void displayData (void){
-        std::cout<<"Sum of two complex number is "<<x<<"+"<<y<<"i\n";
+    void displayData(void)
+    {
+        std::cout << "Sum of two complex number is " << x << "+" << y << "i\n";
     }
-
 };
 
-int main(){
+int main()
+{
 
     complex c1, c2, c3;
 

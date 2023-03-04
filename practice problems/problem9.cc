@@ -1,5 +1,5 @@
-//Length of sides of a triangle is input through keyboard. Find the area o the triangle.
-//Using Heron's Formula.
+// Length of sides of a triangle is input through keyboard. Find the area o the triangle.
+// Using Heron's Formula.
 #include <iostream>
 #include <cmath>
 using namespace std;

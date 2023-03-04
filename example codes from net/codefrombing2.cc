@@ -65,6 +65,6 @@ int main()
         cout << "The first day of " << year << " is Saturday." << endl;
         break;
     }
-    
+
     return 0;
 }

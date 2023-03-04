@@ -1,10 +1,11 @@
 // ----- if-else & control structure -----
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main(){
+int main()
+{
     int age;
-    cout<<"Your age? :"<<endl;
-    cin>>age;
+    cout << "Your age? :" << endl;
+    cin >> age;
     // Selection control structure using if-else-else if:
 
     // if((age<18)&&(age>0)){
@@ -38,6 +39,6 @@ int main(){
     //     cout<<"No special cases"<<endl;
     //     break;
     // }
-    
+
     return 0;
 }

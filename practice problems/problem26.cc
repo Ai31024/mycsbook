@@ -17,17 +17,17 @@ int main()
     std::cout << "Enter y coordinate of your point: ";
     std::cin >> input_axis_y;
     distance = sqrt(pow((input_axis_x - input_center_x), 2) + pow((input_axis_y - input_center_y), 2));
-    if(distance>radius)
+    if (distance > radius)
     {
-        std::cout<<"Entered point lies outside of circle perimeter";
+        std::cout << "Entered point lies outside of circle perimeter";
     }
-    else if(distance == radius)
+    else if (distance == radius)
     {
-        std::cout<<"Entered point lies on the circle perimeter";
+        std::cout << "Entered point lies on the circle perimeter";
     }
     else
     {
-        std::cout<<"Entered point lies inside the circle perimeter";
+        std::cout << "Entered point lies inside the circle perimeter";
     }
     return 0;
 }

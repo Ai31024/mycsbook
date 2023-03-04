@@ -4,7 +4,7 @@ class members
 {
 private:
     int id;
-    static int count; //Any static variable will start from Zero (0)
+    static int count; // Any static variable will start from Zero (0)
 
 public:
     void putdata(void)
@@ -23,12 +23,12 @@ public:
     }
 };
 
-int members::count; //Any value can be assigned in here Only. If no value assigned then the default value will be Zero.
+int members::count; // Any value can be assigned in here Only. If no value assigned then the default value will be Zero.
 
 int main()
 {
     members azam, ahmad, zainab, mariyam;
-    
+
     azam.putdata();
     azam.getdata();
     azam.getcount();
@@ -44,5 +44,4 @@ int main()
     mariyam.putdata();
     mariyam.getdata();
     mariyam.getcount();
-
 }

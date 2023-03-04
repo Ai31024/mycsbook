@@ -18,7 +18,7 @@ void binary::read(void)
 {
     std::cout << "Enter a binary number" << std::endl;
     std::cin >> lines;
-    std::cout<<std::endl;
+    std::cout << std::endl;
 }
 
 void binary::binary_check(void)
@@ -36,7 +36,7 @@ void binary::binary_check(void)
 void binary::ones_compliment(void)
 {
     binary_check();
-    std::cout<<"\nApplying 1's Compliment"<<std::endl;
+    std::cout << "\nApplying 1's Compliment" << std::endl;
     for (int i = 0; i < lines.length(); i++)
     {
         if (lines.at(i) == '0')

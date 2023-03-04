@@ -1,9 +1,9 @@
 #include <iostream>
 
 void myFunction(std::string fname)
-    {
-        std::cout << fname << " Irshad.\n";
-    }
+{
+    std::cout << fname << " Irshad.\n";
+}
 
 int main()
 {

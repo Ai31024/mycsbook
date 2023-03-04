@@ -1,8 +1,8 @@
 CREATE TABLE 'users' (
-    'id' int(11) unsigned NOT NULL AUTO_INCREMENT,
-    'name' varchar(75) NOT NULL,
-    'password' varchar(255) NOT NULL,
-    'email' varchar(100) NOT NULL,
+    'id' INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+    'name' VARCHAR(75) NOT NULL,
+    'password' VARCHAR(255) NOT NULL,
+    'email' VARCHAR(100) NOT NULL,
     PRIMARY KEY ('id'),
     UNIQUE KEY 'email' ('email')
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
+) ENGINE=INNODB DEFAULT CHARSET=UTF8 COLLATE=UTF8_UNICODE_CI AUTO_INCREMENT=1;

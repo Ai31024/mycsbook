@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main(int argc, char const *argv[])
 {
@@ -67,15 +67,14 @@ int main(int argc, char const *argv[])
     */
 
     int num;
-    cout<<"Enter a number for multiplication table till ten : ";
-    cin>>num;
-    
-    int i=0;
+    cout << "Enter a number for multiplication table till ten : ";
+    cin >> num;
+
+    int i = 0;
     do
     {
-        cout<<num<<" x "<<i<<" = "<<num*i<<endl;
+        cout << num << " x " << i << " = " << num * i << endl;
         i++;
-    }
-    while(i<=10);
+    } while (i <= 10);
     return 0;
 }

@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 // Inline function example:
@@ -37,7 +37,7 @@ int main()
     // cout<<"5 x 10 is "<<mul(a, b)<<endl;
     // cout<<"5 x 10 is "<<mul(a, b)<<endl;
     // cout<<"5 x 10 is "<<mul(a, b)<<endl;
-    
+
     // For Static function:
     // int a;
     // cout<<"Enter value of 'a' ";
@@ -59,7 +59,7 @@ int main()
     // cout<<"This item will become "<<expensivedays(a, 1.05)<<" after 1 year"<<endl;
 
     // For Constant argument:
-    // 
-    
+    //
+
     return 0;
 }

@@ -18,9 +18,10 @@ public:
         cout << "The id of this employee is " << id << " and this is employee number " << count << endl;
     }
 
-    static void getCount(void){
+    static void getCount(void)
+    {
         // cout<<id; // throws an error
-        cout<<"The value of count is "<<count<<endl;
+        cout << "The value of count is " << count << endl;
     }
 };
 

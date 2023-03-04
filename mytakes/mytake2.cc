@@ -3,7 +3,7 @@
 int main()
 {
     int length = 1189, width = 841;
-    
+
     for (int i = 0; i <= 8; i++)
     {
         std::cout << "A" << i << ": " << length << " x " << width << "\n";
