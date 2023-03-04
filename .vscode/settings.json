@@ -53,7 +53,7 @@
         "streambuf": "cpp",
         "typeinfo": "cpp"
     },
-    "C_Cpp.errorSquiggles": "disabled",
+    "C_Cpp.errorSquiggles": "enabled",
     "editor.tabCompletion": "on",
     "diffEditor.codeLens": true,
     "php.validate.executablePath": "E:/Xampp/php/php.exe"
