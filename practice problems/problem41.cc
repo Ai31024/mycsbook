@@ -17,7 +17,7 @@ int main()
     int computer = 0;
     std::cout << "Lets play matchstick game.\nThere are 21 number of matchstick to play with.\n";
 
-    while (count >= 1)
+    while (count >= 0)
     {
         int pick = 0;
         switch (turn % 2)
@@ -44,6 +44,7 @@ int main()
             break;
 
         case 1:
+            pick = 0;
             std::cout << "\n\nNumber of matchstick available right now is\nComputer's Turn" << count << "\nComputer will pick\n";
             pick = 4;
             std::cout << "Computer picked: " << pick << "\n";
@@ -58,13 +59,13 @@ int main()
         }
     }
 
-    if (user > computer)
+    if (user < computer)
     {
-        std::cout << "Computer drawed the last\nYou win, Good game!";
+        std::cout << "\nComputer drawed the last\nYou win, Good game!";
     }
     else
     {
-        std::cout << "You were forced to draw the last card\n\nComputer Wins!";
+        std::cout << "\nYou were forced to draw the last card\n\nComputer Wins!";
     }
     return 0;
 }
