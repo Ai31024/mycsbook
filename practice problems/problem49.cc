@@ -4,9 +4,7 @@ with side length less than or equal to 30.*/
 #include <iostream>
 int main()
 {
-    int a, b, c = 0;
-    int m = 2;
-    int limit = 30;
+    int a, b, c = 0, m = 2, limit = 30;
     while (c < limit)
     {
         for (int n = 1; n < m; ++n)
@@ -19,7 +17,6 @@ int main()
             {
                 break;
             }
-
             std::cout << a << " " << b << " " << c << "\n";
         }
         m++;
