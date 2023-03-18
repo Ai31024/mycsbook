@@ -2,30 +2,44 @@
 with side length less than or equal to 30.*/
 
 #include <iostream>
+
+void pythagoreanTriplets(int limit)
+{
+
+    // triplet: a^2 + b^2 = c^2
+    int a, b, c = 0;
+
+    // loop from 2 to max_limit
+    int m = 2;
+
+    // Limiting c would limit
+    // all a, b and c
+    while (c < limit)
+    {
+
+        // now loop on j from 1 to i-1
+        for (int n = 1; n < m; ++n)
+        {
+
+            // Evaluate and print triplets using
+            // the relation between a, b and c
+            a = m * m - n * n;
+            b = 2 * m * n;
+            c = m * m + n * n;
+
+            if (c > limit)
+                break;
+
+            printf("%d %d %d\n", a, b, c);
+        }
+        m++;
+    }
+}
+
+// Driver Code
 int main()
 {
-    int perpendicular = 0, base = 0, hypotenuse = 0;
-
-    for (perpendicular = 0; perpendicular <= 30; perpendicular++)
-    {
-        int p2 = perpendicular * perpendicular;
-
-        for (base = 0; base <= 30; base++)
-        {
-            int b2 = base * base;
-            int sum = p2 + b2;
-
-            for (hypotenuse = 0; hypotenuse <= 30; hypotenuse++)
-            {
-                int h2 = hypotenuse * hypotenuse;
-                
-                if (sum = h2)
-                {
-                    std::cout << p2 << " + " << b2 << " = " << h2 << "\n";
-                }
-            }
-        }
-    }
+    int limit = 30;
+    pythagoreanTriplets(limit);
     return 0;
 }
-//IDK
