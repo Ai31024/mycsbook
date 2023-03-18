@@ -4,7 +4,7 @@ with side length less than or equal to 30.*/
 #include <iostream>
 int main()
 {
-    int a, b, c = 0, m = 2, limit = 30;
+    int a = 0, b = 0, c = 0, m = 2, limit = 30;
     while (c < limit)
     {
         for (int n = 1; n < m; ++n)
