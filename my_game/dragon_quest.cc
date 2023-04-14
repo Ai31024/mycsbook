@@ -250,7 +250,7 @@ void selection_choice(int humanity, int position)
     switch (selection)
     {
     case 1:
-    //
-    break;
+        //
+        break;
     }
 }
