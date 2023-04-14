@@ -58,13 +58,13 @@ void story_play(int humanity, int position)
             std::cin.get();
             std::cout << "Mysterious Woman: Now I'am curious how will you handle your Dragon Quest...\n";
             std::cin.get();
-            std::cout << "Mysterious Woman: 'I can be your fellow traveller in your journey.'\n";
+            std::cout << "Mysterious Woman: 'I can be your fellow traveler in your journey.'\n";
             std::cin.get();
             std::cout << "You walked away signalling that you need no help and want no one to be hurt.\n";
             std::cin.get();
             std::cout << "But she followed you anyways.\n";
             std::cin.get();
-            std::cout << "You were annoyed and signalled her to leave but she dissappeared and you heared a playful giggle.\n";
+            std::cout << "You were annoyed and signalled her to leave but she disappeared and you heard a playful giggle.\n";
             std::cin.get();
             std::cout << "You check your bag and saw a map which was not there. It shows where you are and few places marked as objective.\n";
             std::cin.get();
@@ -95,7 +95,7 @@ void map_display(int position)
     switch (position)
     {
     case 0:
-        std::cout << "\t\t**Map**\nM - Hidden mountain\nF - Forst\nL - Mysterious Lake\nE - Eating house\n";
+        std::cout << "\t\t**Map**\nM - Hidden mountain\nF - Forest\nL - Mysterious Lake\nE - Eating house\n";
         std::cout << "|   .   .   .   .   .   .   .   .   .   .   .   .   .   .   |\n";
         std::cout << "|   .   .   .   .   .   .   M   .   .   .   .   .   .   .   |\n";
         std::cout << "|   .   .   .   .   .   .   .   .   .   .   .   .   .   .   |\n";
@@ -195,7 +195,7 @@ void map_display(int position)
 
 void title(void)
 {
-    std::cout << "\t\t**Game Info**\nChoose between 0 - 9 When selection choice comes.\nChoose wasd for direction when action choice comes.\n";
+    std::cout << "\t\t**Game Info**\nChoose between 0 - 9 When selection choice comes.\nChoose w a s d for direction when action choice comes.\n";
     std::cout << "Press Enter to play\n\n";
     std::cin.get();
 }
