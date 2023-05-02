@@ -31,7 +31,7 @@ Data Types: (see code1)
 Data Types define the type of data a variable can hold
 for example an integer variable can hold integer data, a Character type variable can hold Character data etc.
 
-Data Types in Cpp are categorised in three group:
+Data Types in Cpp are categorized in three group:
 1. Build-in.
 2. User-Defined.
 3. Derived.
@@ -63,7 +63,7 @@ Accessing character position in a string:
 To access a character from a perticular postion in string, we should use square brackets with
 desired position number.
 example:
-    string name = "Avalanch";
+    string name = "Avalanche";
     cout << name[1];
 output:
     "v".
@@ -77,11 +77,11 @@ output:
     "Taza".
 -----------------------
 getline function can also be used to get input:
-NOTE: This only works for string datatypes.
+NOTE: This only works for string datatype.
 string name;
 cout<<"Give name: \n";
 getline(cin, name);
-cout<<"Entered name is: <<name<<"\n";
+cout<<"Entered name is: <<name \n";
 -----------------------
 Just as above, an array can also be accessed or replaced by using square brackets.
 -----------------------
@@ -107,7 +107,7 @@ Common operators in C++:
 
     1. Arithmetic Operators : +, -, /, *, %, etc.
     2. Assignment Operators : =
-    3. Comparision Operators : <, >, <=, >=, ==, !=, etc.
+    3. Comparison Operators : <, >, <=, >=, ==, !=, etc.
     4. Logical Operators : &&, ||, !(bool), etc.
     5. Increment and decrement operators : i++, i--, ++i, --i, i+=n, i-=n, etc.
 
@@ -118,7 +118,7 @@ specified increment : i+=n, i-=n
 Reference variables & Typecasting: (see code4)
 
 Reference variables means that one variable can be called using different names.
-To make a different name refer to a perticular variable, we should use (&) sign before it.
+To make a different name refer to a particular variable, we should use (&) sign before it.
 i.e.,
     int a = 10;
     int &b = a;
@@ -199,12 +199,12 @@ continues to run rest of the loop chain.
 
 Pointers in C++: (see code9)
 
-Pointer (indicated using star *) is a type of datatype that holds the address of other datatypes.
+Pointer (indicated using star *) is a type of datatype that holds the address of other datatype.
 Here, "reference in C++ (i.e., &)" is needed for better understanding.
 
 & means 'Address of' operator and Reference variable.
 * means 'Dereference' operator and pointer variable.
-** means pointer to pointer variable and double dereference operator.
+** means 'Double Dereference' operator and pointer to pointer variable.
 This pointer tells us the address of the another pointer.
 
 pointers are used to store the address of other datatype in the computer's memory.
@@ -214,7 +214,7 @@ To see the memory address in which the other datatype is stored, here is an exam
     int a = 1;
     int* b = &a;
     cout<<b<<endl;
-This will return an address of the memory in which interger "a" is stored.
+This will return an address of the memory in which integer "a" is stored.
 
 If we want to see address of a datatype but without using pointer variable, then we can do as following example:
     int a = 1;
@@ -246,7 +246,7 @@ and to get value at address we should use multiple dereference operators.
 Arrays and Pointers in C++: (see code10)
 
 Arrays:
-    Array is a collection of items of similar type stored in contigous memory locations.
+    Array is a collection of items of similar type stored in contiguous memory locations.
     Sometimes a simple variable is not enough to hold all the data.
     For example, lets say we want to store the marks of 2500 students, having 2500 different marks.
     For simple variable this task is not feasible.
