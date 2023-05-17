@@ -2,5 +2,5 @@ Infinite Loop ends when:
 
 1. Your computer memory is exhausted.
 2. Your computer power source is either turned off or is drained.
-3. The size of datatype is exhausted.
-4. You closing the program window :)
+3. The size of datatype is exhausted (Not very reliable since it may go in circles with it's range).
+4. You closing the program window or by pushing Ctrl+C.
