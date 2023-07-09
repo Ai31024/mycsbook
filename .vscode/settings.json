@@ -1,7 +1,11 @@
 {
     "cSpell.words": [
         "Azam",
-        "Irshad"
+        "elif",
+        "Irshad",
+        "ordereddict",
+        "readline",
+        "readlines"
     ],
     "files.associations": {
         "iostream": "cpp",
