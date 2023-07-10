@@ -1,6 +1,6 @@
 #include <iostream>
 // Use void before function when it should not return a value.
-// Use int, float, string, etc. before funtion when it should return a value.
+// Use int, float, string, etc. before function when it should return a value.
 int sum(int a, int b)
 {
     return a + b;

@@ -9,7 +9,7 @@ int main()
 {
     name_age("Azam", 26);
     name_age("Zainab", 23);
-    name_age("Ahamd", 20);
+    name_age("Ahmad", 20);
     name_age("Mariyam", 15);
     return 0;
 }

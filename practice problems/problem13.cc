@@ -1,5 +1,5 @@
 /*If value of an angle is input through the keyboard,
-write a program to print all it's Trignometric ratios.*/
+write a program to print all it's Trigonometric ratios.*/
 #include <iostream>
 #include <cmath>
 int main()

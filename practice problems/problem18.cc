@@ -21,7 +21,7 @@ int main()
         }
         else
         {
-            std::cout << "It's not a leap year.";
+            std::cout << "It's a leap year.";
         }
     }
     else
