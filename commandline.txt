@@ -1,0 +1,9 @@
+-hz 60
+-width 1920
+-height 1080
+-nomrestrict
+-norestrictions
+-noprecache
+-novblank
+-percentvidmem 100
+-availablevidmem 2048
