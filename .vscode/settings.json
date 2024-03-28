@@ -60,5 +60,5 @@
     "C_Cpp.errorSquiggles": "enabled",
     "editor.tabCompletion": "on",
     "diffEditor.codeLens": true,
-    "php.validate.executablePath": "D:/Xampp/php/php.exe"
+    "php.validate.executablePath": "C:\\Users\\iazam\\Desktop\\mycsbook\\php_exe\\php-8.3.4-Win32-vs16-x64\\php.exe"
 }
