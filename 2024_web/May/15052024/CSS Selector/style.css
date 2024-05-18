@@ -1,0 +1,21 @@
+/* Write your code here: */
+h1,
+h2 {
+  color: blueviolet;
+} /*[1] multiple Selector*/
+
+.box > .done {
+  color: firebrick;
+} /*[2] Parent-Child Selector*/
+
+.box li {
+  color: blue;
+} /*[3] Ancestor-decedent Selector*/
+
+li.done {
+  color: seagreen;
+} /*[4] Chaining Selector (Always keep element tag at start)*/
+
+ul p.done {
+  font-size: 0.5rem;
+} /*[5] Combination of Selectors (Combined [3]&[4] using space)*/
