@@ -1,0 +1,86 @@
+body {
+  background-color: whitesmoke;
+}
+
+p {
+  margin: 0px;
+}
+
+hr {
+  width: 65%;
+}
+
+u {
+  margin: 0px;
+}
+
+li {
+  text-align: left;
+  margin: 0%;
+}
+
+.font-style1 {
+  width: 50%;
+  margin-left: 25%;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.font-style2 {
+  width: 35%;
+  margin-left: 33%;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.font-style3 {
+  width: 50%;
+  margin-left: 25%;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.font-style4 {
+  width: 50%;
+  margin-left: 25%;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.font-style5 {
+  width: 50%;
+  margin-left: 25%;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.img-css {
+  border: 5px solid black;
+  width: 10%;
+  padding: 5px;
+}
+
+img.img-css {
+  position: absolute;
+  left: 50px;
+}
