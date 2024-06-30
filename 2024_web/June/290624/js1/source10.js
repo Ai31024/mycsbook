@@ -5,7 +5,7 @@ var selectType = prompt(
   "1. String with String\n2. String with Number\n3. Number with Number\n4. NaN\n5. is NaN?\n6. is not NaN?"
 );
 
-// Creating function that runs While Loop.
+// Creating function for String to String work.
 function sTS() {
   var a = "1";
   var b = "1";
@@ -15,7 +15,7 @@ function sTS() {
   alert(c);
 }
 
-// Creating function that runs For Loop.
+// Creating function for String to Number work.
 function sTN() {
   var a = "1";
   var b = 1;
@@ -25,7 +25,7 @@ function sTN() {
   alert(c);
 }
 
-// Creating function that runs Do-While Loop.
+// Creating function for Number to Number work.
 function nTN() {
   var a = 1;
   var b = 1;
@@ -35,7 +35,7 @@ function nTN() {
   alert(c);
 }
 
-// Creating function that runs While Loop.
+// Creating function that gives NaN Error
 function myNaNCheck1() {
   var a = "1";
   var b = "a";
@@ -45,7 +45,7 @@ function myNaNCheck1() {
   alert(c);
 }
 
-// Creating function that runs For Loop.
+// Creating function that catches NaN Error.
 function myNaNCheck2() {
   var a = "1";
   var b = "a";
@@ -58,7 +58,7 @@ function myNaNCheck2() {
   }
 }
 
-// Creating function that runs Do-While Loop.
+// Creating function that allows numbers.
 function myNaNCheck3() {
   var a = 1;
   var b = 1;
@@ -70,6 +70,7 @@ function myNaNCheck3() {
   }
 }
 
+// Switching.
 switch (selectType) {
   case "1":
     sTS();

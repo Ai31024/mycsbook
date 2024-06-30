@@ -1,11 +1,16 @@
+// Subject: String's property and comparison.
+
 alert("Comparison of two strings");
 var selectType = prompt(
   "1. Meaning using uppercase function.\n2. Meaning using lowercase function.\n3. length."
 );
 
+// Function that compare values of two strings,
+// Regardless of letter case, by using toUpperCase() function.
 function valueCheckUsingUpperCase() {
   var a = prompt("Enter string 1:");
   var aValue = a.toUpperCase();
+
   var b = prompt("Enter string 2:");
   var bValue = b.toUpperCase();
 
@@ -16,6 +21,8 @@ function valueCheckUsingUpperCase() {
   }
 }
 
+// Function that compare values of two strings,
+// Regardless of letter case, by using toLowerCase() function.
 function valueCheckUsingLowerCase() {
   var a = prompt("Enter string 1");
   var aValue = a.toLowerCase();
@@ -30,6 +37,8 @@ function valueCheckUsingLowerCase() {
   }
 }
 
+// Function that compare length of two strings,
+// By using length function.
 function lengthCheckFunction() {
   var a = prompt("Enter length of string 1");
   var aLength = a.length;
@@ -44,6 +53,7 @@ function lengthCheckFunction() {
   }
 }
 
+// switching.
 switch (selectType) {
   case "1":
     valueCheckUsingUpperCase();
