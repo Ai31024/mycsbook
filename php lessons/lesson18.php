@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 16</title>
+    <title>Lesson 18</title>
 </head>
 
 <body>
 
     <?php
-
 
     $books = [
         [
@@ -39,25 +38,34 @@
         ]
     ];
 
-    // Creating function in PHP using single argument.
-    function filterByAuthor($books)
+    // Creating function in PHP using two argument.
+    function filterBySelectAuthorAsVariable($books, $author)
     {
         $filteredBooks = [];
 
         foreach ($books as $book) {
-            if ($book['author'] === 'Paulo Coelho') {
+            if ($book['author'] === $author) { // Author key is compared with Author variable.
                 $filteredBooks[] = $book;
             }
         }
         return $filteredBooks;
     }
 
+    // Here, instead of using function directly in loop, we created and assigned a variable,
+    // That holds the function along with the arguments.
+    $filteredBooks = filterBySelectAuthorAsVariable($books, 'Paulo Coelho');
+
     ?>
     <ul>
-        <?php foreach (filterByAuthor($books) as $book) : ?>
+        <?php foreach ($filteredBooks as $book) : ?>
+            <!--Here 'Paulo Coelho' is passed as argument for $author-->
+
             <a href="<?= $book['purchaseUrl'] ?>">
+
                 <li><?= $book['name']; ?> (<?= $book['revision']; ?>) - <?= $book['author'] ?></li>
+
             </a>
+
         <?php endforeach; ?>
     </ul>
 

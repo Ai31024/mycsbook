@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 16</title>
+    <title>Lesson 17</title>
 </head>
 
 <body>
@@ -39,13 +39,13 @@
         ]
     ];
 
-    // Creating function in PHP using single argument.
-    function filterByAuthor($books)
+    // Creating function in PHP using two argument.
+    function filterBySelectAuthor($books, $author)
     {
         $filteredBooks = [];
 
         foreach ($books as $book) {
-            if ($book['author'] === 'Paulo Coelho') {
+            if ($book['author'] === $author) { // Author key is compared with Author variable.
                 $filteredBooks[] = $book;
             }
         }
@@ -54,10 +54,15 @@
 
     ?>
     <ul>
-        <?php foreach (filterByAuthor($books) as $book) : ?>
+        <?php foreach (filterBySelectAuthor($books, 'Paulo Coelho') as $book) : ?>
+            <!--Here 'Paulo Coelho' is passed as argument for $author-->
+
             <a href="<?= $book['purchaseUrl'] ?>">
+
                 <li><?= $book['name']; ?> (<?= $book['revision']; ?>) - <?= $book['author'] ?></li>
+
             </a>
+
         <?php endforeach; ?>
     </ul>
 
