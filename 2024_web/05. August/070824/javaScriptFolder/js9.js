@@ -34,7 +34,6 @@ function myFunction(bottles) {
     console.log("Thank you!");
     currentBalance = currentBudget - Math.floor(currentBudget / 30) * 30;
     console.log("Your remaining balance is: " + currentBalance + "rs.");
-    return;
   } else {
     console.log("Bought " + bottles + " bottles of milk.");
     console.log("Enjoy your milk!");
