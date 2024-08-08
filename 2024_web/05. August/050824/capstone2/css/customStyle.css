@@ -1,0 +1,40 @@
+.custom-background-gradient {
+  background-image: linear-gradient(to bottom left, #00bfff, #d3e1e7);
+}
+
+.custom-image-css-1 {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  align-items: end;
+}
+
+.custom-image-css-2 {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  align-items: start;
+}
+
+.edu-au-vic-wa-nt-hand-custom-font-1 {
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1 {
+    color: #d86822;
+}
+
+.edu-au-vic-wa-nt-hand-custom-font-2 {
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #d86822;
+}
+
+.custom-div-1 {
+  max-height: 30vh;
+}
