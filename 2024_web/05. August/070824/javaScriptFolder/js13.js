@@ -54,4 +54,7 @@ function getMilk(rate, budget, quantity) {
   }
 }
 
-getMilk(3, 20, 6); // Output: You can buy 6 of milk with your current budget of $20 and have change of $2
+getMilk(1, 1, 1); // **TEST** rate = 1, budget = 1, quantity = 1 and change = 0.
+
+var returnChange = getMilk(3, 20, 6); // change = 2.
+console.log(returnChange);
